@@ -30,4 +30,16 @@ public class testUniv {
             e2.addAll(u.ects().keySet);
         }); 
     }
+    // Question 4 : Comment calculer la moyenne d'un étudiant. 
+    /* je prends les notes de l'étudiants 
+     * Je prends les ects
+     * A chaque fois que j'ai une note j'irais chercher le coefficient de la matière. 
+     * somme des produits de matière fois coeffients / la somme des coefficients. 
+     */
+    public Double moyenne(Etudiant e){
+        e.notes()
+        e.annee().ects()
+        
+    }
+    //Question 5: e-> moy(e)<10;
 }
