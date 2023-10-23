@@ -1,11 +1,14 @@
 package programmation.fonctionnelle;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+
+import org.junit.jupiter.api.Test;
 
 
 public class EtudiantTest{
@@ -14,7 +17,7 @@ public class EtudiantTest{
         assertTrue(oe.isPresent()); 
         Etudiant e = oe.get(); 
         Optional<Double> om = e.moyenne(); 
-        assertTure(om.isPresent()); 
+        assertTrue(om.isPresent()); 
         assertEquals(om.get(), (Double)11.0); 
     }
 

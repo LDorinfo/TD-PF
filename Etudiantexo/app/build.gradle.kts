@@ -17,9 +17,9 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    
-    // Utilisez JUnit Jupiter (JUnit 5) pour les tests.
-    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     // This dependency is used by the application.
     implementation("com.google.guava:guava:32.1.1-jre")
